@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@keyframes pulse {
+  0%, 30%, 70%, 100% {
+    transform: scale(1.5);
+    opacity: 0.6;
+  }
+  5%, 35%, 75% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(255, 239, 220);
+}
+
+.about-us {
+  margin-top: 200px;
+  position: relative;
+  box-sizing: border-box;
+}
+.about-us .bg-aboutus {
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  opacity: 0.1;
+}
+.about-us .container {
+  padding: 0 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  align-items: center;
+  width: 100%;
+}
+.about-us .container .left {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.about-us .container .left img {
+  margin-top: -150px;
+  width: 60%;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+.about-us .container .right h1 {
+  font-size: 40px;
+  margin-bottom: 0.5em;
+}
+.about-us .container .right h1 span {
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+.about-us .container .right p {
+  margin: 2em 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+.about-us .container .right button {
+  padding: 12px 24px;
+  border-radius: 40px;
+  background: brown;
+  border: none;
+  color: orange;
+  font-size: 18px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.special-menu {
+  padding: 150px 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: white;
+}
+.special-menu h1 {
+  font-size: 40px;
+}
+.special-menu h1 span {
+  text-decoration: underline;
+  text-decoration-color: orange;
+}
+.special-menu .menus {
+  margin-top: 3em;
+  height: 700px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+}
+.special-menu .menus .card {
+  position: relative;
+  padding: 4px;
+  border: 8px solid rgba(255, 255, 255, 0.5);
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.special-menu .menus .card img {
+  width: 100%;
+  height: 50%;
+  border-radius: 12px;
+}
+.special-menu .menus .card .rate {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  box-shadow: none;
+  position: absolute;
+  padding: 3px;
+  left: 5%;
+  top: 5%;
+}
+.special-menu .menus .card .rate .inner {
+  font-weight: bold;
+  background: #fff;
+  padding: 8px 40px;
+  border-radius: 40px;
+  padding: 4px 8px;
+}
+.special-menu .menus .card .rate .inner img {
+  width: 1em;
+}
+.special-menu .menus .card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.special-menu .menus .card .card-body .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.special-menu .menus .card .card-body .title p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.special-menu .menus .card .card-body .title p:nth-child(2) {
+  font-size: 16px;
+  font-weight: bolder;
+}
+.special-menu .menus .card .card-body .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.special-menu .menus .card .card-body .content .badges {
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  gap: 8px;
+}
+.special-menu .menus .card .card-body .content .badges .badge {
+  background: transparent;
+  border: 2px solid orange;
+  padding: 8px 24px;
+  border-radius: 16px;
+  color: orange;
+  opacity: 0.4;
+}
+.special-menu .menus .card .card-body .content .badges .badge.active {
+  opacity: 1;
+}
+.special-menu .menus .card .card-body .content button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  background: orange;
+  padding: 4px;
+  border: none;
+  border-radius: 100%;
+}
+.special-menu .menus .card .card-body .content button i {
+  font-size: 1.4rem;
+  color: white;
+}
+.special-menu .menus .card img {
+  width: 100%;
+  height: 60%;
+}
+.special-menu .menus .card .card-body .content .description {
+  font-weight: bold;
+  opacity: 0.6;
+}
+.special-menu .menus .card .card-body .title p {
+  font-weight: bolder;
+  font-size: 1.4em;
+}/*# sourceMappingURL=style.css.map */
